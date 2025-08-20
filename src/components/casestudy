@@ -1,0 +1,28 @@
+1. useState – Managing Local Component Data
+
+📌 Use Case: Form Handling (Login/Signup Form)
+Imagine you’re building a login form with two input fields: username and password.
+With useState, you can store and update these values as the user types.
+When the user presses "Login", you use the current values stored in state to check if they match stored credentials or pass them to validation logic.
+
+👉 Outcome: Immediate updates on screen when the user types and a clear way to validate before submission.
+
+
+2. useEffect – Responding to Lifecycle Events
+
+📌 Use Case: Updating Page Title on Actions
+Suppose you’re building a shopping cart.
+Every time the user adds or removes items, you want the browser tab title to update, e.g., "Cart (3 items)".
+With useEffect, you can run this update after state changes in the cart.
+
+👉 Outcome: The app feels more dynamic, keeping the user informed without reloading.
+
+
+3. useContext – Sharing Data Across Components
+
+📌 Use Case: Theme Switching (Light/Dark Mode)
+A website often lets users toggle between light mode and dark mode.
+Instead of passing "theme" as a prop from parent to child again and again (prop drilling), you put "theme" in a Context.
+Now, every button, text, or card in your app can directly use the current theme.
+
+👉 Outcome: All parts of the app stay in sync with the user’s selected theme, without repetitive prop passing.
